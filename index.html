@@ -9,6 +9,11 @@
 		<link rel="stylesheet" type="text/css" href="index.css" />
 	</head>
 <body>
+  <h1>index.html</h1>
+  <section ui-view></section>
+  <pre>$state = {{$state.$current.name}}</pre>
+  <pre>$stateParams = {{$stateParams}}</pre>
+  <pre>$state full url = {{$state.$current.url.source}}</pre>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/twitter/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
