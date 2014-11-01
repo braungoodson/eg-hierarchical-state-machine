@@ -56,16 +56,17 @@ function $EgHsmRootConfig($stateProvider,$urlRouterProvider) {
       templateProvider: ['$q','$http','$stateParams',function($q,$http,$stateParams){
         var d = $q.defer();
         d.notify('POST /root/child');
-        $http
-          .post('/root/child',$stateParams)
-          .success(function(response){
+        $http({
+            method: 'POST',
+            url: '/root/child',
+            headers: {'Content-Type':'application/x-www-form-urlencoded'},
+            data: $.param($stateParams)
+        }).success(function(response){
             d.resolve(response);
-          })
-          .error(function(error){
+        }).error(function(error){
             d.reject(error);
             throw new Error(error);
-          })
-        ;
+        });
         return d.promise;
       }]
     })
