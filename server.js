@@ -8,12 +8,8 @@ server.use('/', express.static(staticRoot));
 server.use(bodyParser.urlencoded({entended:false}));
 server.post('/root/child',function(q,r){
   var markup = '';
-  markup += '<div class="panel panel-default">';
-  markup +=   '<div class="panel-body">';
-  markup +=     '<h3>child.html</h3>';
-  markup +=     '<code>'+JSON.stringify(q.body)+'</code>';
-  markup +=   '</div>';
-  markup += '</div>';
+  markup += '<h3>child.html</h3>';
+  markup += '<code>'+JSON.stringify(q.body)+'</code>';
   r.send(markup);
 });
 server.listen(port);

@@ -9,22 +9,12 @@
 		<link rel="stylesheet" type="text/css" href="index.css" />
 	</head>
 <body>
-  <div class="container-fluid">
-    <div class="container">
-      <br />
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h3>index.html</h3>
-          <br />
-          <section ui-view></section>
-          <hr />
-          <pre>$state = {{$state.$current.name}}
+    <h1>index.html</h1>
+    <section ui-view></section>
+    <hr />
+    <pre>$state = {{$state.$current.name}}
 $stateParams = {{$stateParams}}
 $state full url = {{$state.$current.url.source}}</pre>
-        </div>
-      </div>
-    </div>
-  </div>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/twitter/dist/js/bootstrap.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
