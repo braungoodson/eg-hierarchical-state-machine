@@ -1,6 +1,6 @@
 {
   "name": "eg-hierarchical-state-machine",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "for angular-ui-router",
   "main": "server.js",
   "scripts": {
