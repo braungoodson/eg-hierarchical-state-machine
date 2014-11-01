@@ -1,7 +1,7 @@
-jta-template
+eh-hierarchical-state-machine
 ======
 
-jquery, twitter, and angularjs template. with express server.
+for angular-ui-router
 
 usage
 ======

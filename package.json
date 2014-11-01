@@ -1,8 +1,8 @@
 {
-  "name": "jta-template",
-  "version": "0.2.1",
-  "description": "jquery, twitter, angularjs; template; +server(express);",
-  "main": "index.js",
+  "name": "eg-hierarchical-state-machine",
+  "version": "0.3.0",
+  "description": "for angular-ui-router",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
